@@ -1,73 +1,192 @@
-# React + TypeScript + Vite
+# Hi there, 👋 My name is Ammar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I'm a Software Engineer interested in frontend development.
+I'm passionate about sharing web engineering knowledge and contributing to projects.
 
-Currently, two official plugins are available:
+<br />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About Me
 
-## React Compiler
+- 🌍  I'm based in Damietta
+- ✉️  You can contact me at [ammarelbadry1@gmail.com](mailto:ammarelbadry1@gmail.com)
+- 🚀  I'm currently working on [Bayaan](https://bayaan-web.vercel.app)
+- 🧠  I'm learning Odoo
+- 🤝  I'm open to collaborating
+  <br />
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Skills
 
-## Expanding the ESLint configuration
+### Core
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<p align="left">
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg"
+        width="36"
+        height="36"
+        alt="Git"
+        title="Git"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/gnubash.svg"
+        width="36"
+        height="36"
+        alt="GNU Bash"
+        title="Bash Scripting"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg"
+        width="36"
+        height="36"
+        alt="C"
+        title="C Programming Language"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg"
+        width="36"
+        height="36"
+        alt="Docker"
+        title="Docker"
+    />
+</p>
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Backend
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<p align="left">
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
+        width="36"
+        height="36"
+        alt="NodeJS"
+        title="NodeJS"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored-dark.svg"
+        width="36"
+        height="36"
+        alt="Express"
+        title="Express"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg"
+        width="36"
+        height="36"
+        alt="PostgreSQL"
+        title="PostgreSQL"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg"
+        width="36"
+        height="36"
+        alt="MongoDB"
+        title="MongoDB"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg"
+        width="36"
+        height="36"
+        alt="Python"
+        title="Python Programming Language"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/flask-colored-dark.svg"
+        width="36"
+        height="36"
+        alt="Flask"
+        title="Flask"
+    />
+</p>
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Frontend
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<p align="left">
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
+        width="36"
+        height="36"
+        alt="JavaScript"
+        title="JavaScript Programming Language"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
+        width="36"
+        height="36"
+        alt="HTML5"
+        title="HTML5"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
+        width="36"
+        height="36"
+        alt="CSS3"
+        title="CSS3"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
+        width="36"
+        height="36"
+        alt="React"
+        title="React"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/webpack-colored.svg"
+        width="36"
+        height="36"
+        alt="Webpack"
+        title="Webpack"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg"
+        width="36"
+        height="36"
+        alt="Vite"
+        title="Vite"
+    />
+    &nbsp;
+    <img
+        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs.svg"
+        width="36"
+        height="36"
+        alt="NextJs"
+        title="NextJs"
+    />
+</p>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<br />
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🤝🏼 Connect with Me
+
+<p align="left">
+    <a href="https://www.linkedin.com/in/ammarelbadry1" target="_blank" rel="noreferrer">
+        <picture>
+            <source
+                media="(prefers-color-scheme: dark)"
+                srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin-dark.svg"
+            />
+            <source
+                media="(prefers-color-scheme: light)"
+                srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg"
+            />
+            <img
+                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg"
+                width="32"
+                height="32"
+                alt="Linkedin Profile"
+            />
+        </picture>
+    </a>
+</p>
+
+<br />

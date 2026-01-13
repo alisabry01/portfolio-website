@@ -1,0 +1,46 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.section h1 {
+  font-family: Calistoga, Inter, Tahoma;
+  font-size: 2.7rem;
+  line-height: 2rem;
+}
+
+.section h1 span {
+  display: inline-block;
+  transform: rotateY(0.5turn) rotateZ(-0.05turn);
+  vertical-align: middle;
+  color: #ffca28;
+}
+
+.section div p:nth-of-type(1) {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.section div p:nth-of-type(1) span {
+  vertical-align: middle;
+}
+
+.section div p:nth-of-type(2) {
+  margin-top: 1rem;
+}
+
+.external-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.avatar {
+  object-fit: cover;
+  width: 200px;
+  height: 250px;
+  border-radius: var(--radius);
+  margin-right: 2rem;
+}

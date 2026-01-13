@@ -1,0 +1,15 @@
+.social-section {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 0;
+}
+
+.social-section a {
+  color: var(--muted-foreground);
+  transition: color var(--transition-timing);
+}
+
+.social-section a:hover {
+  color: var(--foreground);
+}

@@ -1,0 +1,42 @@
+.dynamic-navigator {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+  border-radius: var(--radius);
+  width: 100%;
+  height: 2.25rem;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.tab {
+  all: unset;
+  text-align: center;
+  border-radius: calc(var(--radius) - 2px);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  cursor: pointer;
+  transition: color var(--transition-timing),
+    background-color var(--transition-timing);
+}
+
+.tab:focus-visible {
+  outline: 1px solid var(--foreground);
+}
+
+.active-tab {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.content-display {
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+}

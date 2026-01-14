@@ -1,0 +1,29 @@
+.resume-btn {
+  text-decoration: none;
+  white-space: nowrap;
+  display: block;
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid var(--border);
+  color: var(--accent-foreground);
+  width: min-content;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  transition: background-color var(--transition-timing);
+}
+
+.resume-btn:hover {
+  background-color: var(--accent);
+}
+
+.resume-btn:hover span {
+  transform: translate(2px, -2px);
+}
+
+.resume-btn span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  transition: transform var(--transition-timing);
+}

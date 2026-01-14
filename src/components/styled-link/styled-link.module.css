@@ -1,0 +1,23 @@
+.styled-link {
+  all: unset;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border-radius: calc(var(--radius) - 2px);
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
+  cursor: pointer;
+  transition: background-color var(--transition-timing);
+}
+
+.styled-link:hover {
+  background-color: var(--prose);
+}
+
+.styled-link span {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: bottom;
+  margin-right: 0.5rem;
+}

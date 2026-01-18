@@ -1,0 +1,42 @@
+.featured-projects header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.featured-projects header h2 {
+  font-family: Calistoga, Inter, Tahoma;
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+  letter-spacing: 0.025rem;
+}
+
+.view-more {
+  all: unset;
+  cursor: pointer;
+  color: var(--muted-foreground);
+  transition: color var(--transition-timing);
+}
+
+.view-more:hover {
+  color: var(--foreground);
+}
+
+.view-more span {
+  display: inline-block;
+  line-height: 0;
+  vertical-align: middle;
+  transition: transform var(--transition-timing);
+}
+
+.view-more:hover span {
+  transform: translateX(5px);
+}
+
+.featured-projects main {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}

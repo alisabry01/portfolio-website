@@ -4,3 +4,5 @@ export * from "./social-section";
 export * from "./dynamic-navigator";
 export * from "./experience-list";
 export * from "./styled-link";
+export * from "./featured-projects";
+export * from "./card";

@@ -1,6 +1,6 @@
-import { StyledLink } from "../styled-link";
 import styles from "./experience-list.module.css";
-import { LuGlobe } from "react-icons/lu";
+import type { ElementType } from "react";
+import { StyledLink } from "@/components";
 
 interface CareerPathItem {
   jobTitle: string;
@@ -12,15 +12,16 @@ interface CareerPathItem {
 }
 
 interface Link {
-  name: string;
-  href: string;
+  label: string;
+  url: string;
+  Icon?: ElementType;
 }
 
 export interface ExperienceBlock {
   id: string;
   organization: {
     name: string;
-    imageUrl: string;
+    image: string;
     orgUrl?: string;
   };
   careerPath: CareerPathItem[];
@@ -46,7 +47,7 @@ export const ExperienceList: React.FC<ExperienceListProps> = ({
                 target="_blank"
               >
                 <img
-                  src={item.organization.imageUrl}
+                  src={item.organization.image}
                   className={styles["org-image"]}
                   alt={`${item.organization.name} logo`}
                   loading="lazy"
@@ -63,7 +64,7 @@ export const ExperienceList: React.FC<ExperienceListProps> = ({
           ) : (
             <header className={styles["org-header"]}>
               <img
-                src={item.organization.imageUrl}
+                src={item.organization.image}
                 className={styles["org-image"]}
                 alt={`${item.organization.name} logo`}
                 loading="lazy"
@@ -99,12 +100,11 @@ export const ExperienceList: React.FC<ExperienceListProps> = ({
             <footer className={styles["link-list"]}>
               {item.links.map((link) => (
                 <StyledLink
-                  key={link.href}
-                  href={link.href}
-                  Icon={LuGlobe}
-                >
-                  {link.name}
-                </StyledLink>
+                  key={link.label}
+                  label={link.label}
+                  url={link.url}
+                  Icon={link.Icon}
+                />
               ))}
             </footer>
           )}

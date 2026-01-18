@@ -1,0 +1,60 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.card-cover {
+  border: none;
+  object-fit: cover;
+  /* object-fit: contain;
+  aspect-ratio: 16 / 9; */
+  border-radius: var(--radius);
+  height: 10rem;
+}
+
+.card-header h3 {
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+}
+
+.card-header p {
+  color: var(--muted-foreground);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-wrap: pretty;
+}
+
+.lists-container {
+  margin-top: auto;
+}
+
+.tag-list,
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.tag-list {
+  margin-bottom: 1rem;
+}
+
+.link-list {
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  border-radius: calc(var(--radius) - 2px);
+  padding: 0.05rem 0.5rem;
+  font-size: 0.55rem;
+  font-weight: 600;
+}

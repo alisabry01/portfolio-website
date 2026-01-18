@@ -8,11 +8,13 @@
   font-weight: 600;
   line-height: 1rem;
   cursor: pointer;
-  transition: background-color var(--transition-timing);
+  transition: background-color var(--transition-timing),
+    box-shadow var(--transition-timing);
 }
 
 .styled-link:hover {
-  background-color: var(--prose);
+  background-color: #f8fafced;
+  box-shadow: 4px 4px 8px #1a2332, -4px -4px 8px #232f44;
 }
 
 .styled-link span {

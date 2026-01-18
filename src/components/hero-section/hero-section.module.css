@@ -1,32 +1,37 @@
-.section {
+.hero-section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 2rem;
 }
 
-.section h1 {
+.hero-section article {
+  max-width: 450px;
+}
+
+.hero-section article h1 {
+  padding: 0.5rem 0;
   font-family: Calistoga, Inter, Tahoma;
   font-size: 2.7rem;
   line-height: 2rem;
 }
 
-.section h1 span {
+.hero-section article h1 span {
   display: inline-block;
   transform: rotateY(0.5turn) rotateZ(-0.05turn);
   vertical-align: middle;
   color: #ffca28;
 }
 
-.section div p:nth-of-type(1) {
-  margin-top: 0.5rem;
+.hero-section article p:nth-of-type(1) {
   font-weight: 500;
 }
 
-.section div p:nth-of-type(1) span {
+.hero-section article p:nth-of-type(1) span {
   vertical-align: middle;
 }
 
-.section div p:nth-of-type(2) {
+.hero-section article p:nth-of-type(2) {
   margin-top: 1rem;
 }
 
@@ -34,7 +39,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .avatar {

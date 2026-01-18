@@ -1,41 +1,35 @@
 import styles from "./hero-section.module.css";
 import { MdWavingHand } from "react-icons/md";
-import { GiEgypt } from "react-icons/gi";
 import { ResumeBtn, SocialSection } from "@/components";
+import { socialInfo } from "@/data";
 
 export const HeroSection = () => {
   const getAge = (birthDate: string): number =>
     Math.floor(
-      (new Date().getTime() - new Date(birthDate).getTime()) / 3.15576e10
+      (new Date().getTime() - new Date(birthDate).getTime()) / 3.15576e10,
     );
 
   return (
-    <section className={styles["section"]}>
-      <div>
+    <section className={styles["hero-section"]}>
+      <article>
         <h1>
-          Hi, I'm Ammar{" "}
+          Hi, I'm {socialInfo.name}{" "}
           <span>
             <MdWavingHand />
           </span>
         </h1>
         <p>
-          {getAge("2002-02-26")}yo software engineer from Dumyat, Egypt{" "}
-          <span>
-            <GiEgypt />
-          </span>
+          {getAge(socialInfo.birthDate)}yo {socialInfo.title} from{" "}
+          {socialInfo.country}
         </p>
-        <p>
-          Frontend by profession, full-stack by passion.
-          <br />
-          Interested in web engineering.
-        </p>
-        <section className={styles["external-links"]}>
+        <p>{socialInfo.description}</p>
+        <div className={styles["external-links"]}>
           <ResumeBtn />
           <SocialSection />
-        </section>
-      </div>
+        </div>
+      </article>
       <img
-        src="https://avatars.githubusercontent.com/u/133518349?v=4"
+        src={socialInfo.picture}
         className={styles["avatar"]}
         alt="Portfolio Picture"
       />

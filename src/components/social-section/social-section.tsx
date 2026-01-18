@@ -1,11 +1,12 @@
 import styles from "./social-section.module.css";
 import { LuLinkedin, LuGithub, LuMail } from "react-icons/lu";
+import { socialInfo } from "@/data";
 
 export const SocialSection = () => {
   return (
     <section className={styles["social-section"]}>
       <a
-        href="https://www.linkedin.com/in/ammarelbadry1"
+        href={socialInfo.linkedin}
         target="_blank"
         rel="noopener noreferrer"
         title="LinkedIn"
@@ -13,7 +14,7 @@ export const SocialSection = () => {
         <LuLinkedin />
       </a>
       <a
-        href="https://github.com/ammarelbadry1"
+        href={socialInfo.github}
         target="_blank"
         rel="noopener noreferrer"
         title="Github"
@@ -21,7 +22,7 @@ export const SocialSection = () => {
         <LuGithub />
       </a>
       <a
-        href="mailto:ammarelbadry1@gmail.com"
+        href={`mailto:${socialInfo.email}`}
         target="_blank"
         rel="noopener noreferrer"
         title="Gmail"

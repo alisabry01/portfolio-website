@@ -1,10 +1,11 @@
 import styles from "./resume-btn.module.css";
 import { LuArrowUpRight } from "react-icons/lu";
+import { socialInfo } from "@/data";
 
 export const ResumeBtn = () => {
   return (
     <a
-      href="https://docs.google.com/document/d/1ldqHQQedi_MnLRyHJcVgIbqXQyNxB2wqNLcbkqKqmlU/edit?usp=sharing"
+      href={socialInfo.resume}
       target="_blank"
       className={styles["resume-btn"]}
     >

@@ -14,7 +14,7 @@ const workList: ExperienceBlock[] = [
     id: "Alx Africa",
     organization: {
       name: "Alx Africa",
-      imageUrl:
+      image:
         "https://www.alxafrica.com/wp-content/uploads/2023/12/logo-black.svg",
       orgUrl: "https://www.alxafrica.com/",
     },
@@ -40,7 +40,7 @@ const educationList: ExperienceBlock[] = [
     id: "Damietta University",
     organization: {
       name: "Damietta University",
-      imageUrl:
+      image:
         "https://upload.wikimedia.org/wikipedia/ar/3/30/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%AF%D9%85%D9%8A%D8%A7%D8%B7.gif",
     },
     careerPath: [
@@ -58,16 +58,19 @@ const educationList: ExperienceBlock[] = [
     ],
     links: [
       {
-        name: "Graduation Project",
-        href: "https://github.com/Life-Nest/backend-service",
+        label: "Graduation Project",
+        url: "https://github.com/Life-Nest/backend-service",
+        Icon: LuGithub,
       },
       {
-        name: "Machine Learning Project",
-        href: "https://github.com/ammarelbadry1/machine-learning",
+        label: "Machine Learning Project",
+        url: "https://github.com/ammarelbadry1/machine-learning",
+        Icon: LuGithub,
       },
       {
-        name: "Computer Vision Notebook",
-        href: "https://github.com/ammarelbadry1/computer-vision",
+        label: "Computer Vision Notebook",
+        url: "https://github.com/ammarelbadry1/computer-vision",
+        Icon: LuGithub,
       },
     ],
   },

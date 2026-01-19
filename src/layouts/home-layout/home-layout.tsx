@@ -1,8 +1,28 @@
 import clsx from "clsx";
 import styles from "./home-layout.module.css";
-import { Outlet, Link } from "react-router";
+import { Outlet, Link, NavLink } from "react-router";
 import { useScrollOffset } from "@/hooks";
 import { SocialSection } from "@/components";
+
+interface NavigationLink {
+  label: string;
+  path: string;
+}
+
+const navigationLinks: NavigationLink[] = [
+  {
+    label: "Home",
+    path: "/",
+  },
+  {
+    label: "Projects",
+    path: "/projects",
+  },
+  {
+    label: "Contact",
+    path: "/contact",
+  },
+];
 
 export const HomeLayout = () => {
   const { isScrolled } = useScrollOffset(50);
@@ -13,15 +33,19 @@ export const HomeLayout = () => {
       >
         <nav className={styles["nav"]}>
           <ul className={styles["ul"]}>
-            <li>
-              <Link to="/">home</Link>
-            </li>
-            <li>
-              <Link to="/projects">projects</Link>
-            </li>
-            <li>
-              <Link to="/contact">contact</Link>
-            </li>
+            {navigationLinks.map((link) => (
+              <li>
+                <NavLink
+                  to={link.path}
+                  key={link.label}
+                  className={({ isActive }) =>
+                    isActive ? styles["active"] : ""
+                  }
+                >
+                  {link.label}
+                </NavLink>
+              </li>
+            ))}
           </ul>
           <Link to="/">
             <img src="/logo-32x32.png" width="32px" height="32px" />
@@ -34,7 +58,9 @@ export const HomeLayout = () => {
         </article>
       </main>
       <footer className={styles["footer"]}>
-        <section>copyright</section>
+        <section className={styles["copyright"]}>
+          &copy; {new Date().getFullYear()} Ammar El-Badry
+        </section>
         <SocialSection />
       </footer>
     </>

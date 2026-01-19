@@ -10,7 +10,7 @@ export const HeroSection = () => {
     );
 
   return (
-    <section className={styles["hero-section"]}>
+    <main className={styles["hero-section"]}>
       <article>
         <h1>
           Hi, I'm {socialInfo.name}{" "}
@@ -33,6 +33,6 @@ export const HeroSection = () => {
         className={styles["avatar"]}
         alt="Portfolio Picture"
       />
-    </section>
+    </main>
   );
 };

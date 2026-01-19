@@ -52,11 +52,9 @@ export const HomeLayout = () => {
           </Link>
         </nav>
       </header>
-      <main className={styles["main"]}>
-        <article className={styles["article"]}>
-          <Outlet />
-        </article>
-      </main>
+      <section className={styles["body"]}>
+        <Outlet />
+      </section>
       <footer className={styles["footer"]}>
         <section className={styles["copyright"]}>
           &copy; {new Date().getFullYear()} Ammar El-Badry

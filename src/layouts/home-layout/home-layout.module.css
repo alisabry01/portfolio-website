@@ -44,16 +44,13 @@
   color: var(--foreground);
 }
 
-.main {
-  max-width: var(--layout-max-width);
-  padding: 2rem 2rem 4rem 2rem;
-  margin: 0 auto;
-}
-
-.article {
+.body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  max-width: var(--layout-max-width);
+  padding: 2rem 2rem 4rem 2rem;
+  margin: 0 auto;
 }
 
 .footer {

@@ -1,0 +1,130 @@
+.contact h1 {
+  padding: 0.5rem 0;
+  font-family: Calistoga, Inter, Tahoma;
+  font-size: 2.7rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact .subtitle {
+  margin-bottom: 2rem;
+  color: var(--muted-foreground);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background-color: var(--secondary);
+  color: var(--foreground);
+  font-family: inherit;
+  font-size: 1rem;
+  transition:
+    border-color var(--transition-timing),
+    box-shadow var(--transition-timing);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(248, 250, 252, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius);
+  border: none;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-timing),
+    transform var(--transition-timing);
+  align-self: flex-start;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success-message {
+  background-color: var(--secondary);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  max-width: 600px;
+  padding: 2rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.success-message h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-family: Calistoga, Inter, Tahoma;
+}
+
+.success-message p {
+  margin-bottom: 2rem;
+  color: var(--muted-foreground);
+}
+
+.success-message .btn {
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background-color: transparent;
+  color: var(--foreground);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-timing),
+    border-color var(--transition-timing);
+}
+
+.success-message .btn:hover {
+  background-color: var(--secondary);
+  border-color: var(--primary);
+}
+
+.error-message {
+  color: var(--error);
+  font-size: 0.9rem;
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  background-color: rgba(127, 29, 29, 0.1);
+  border: 1px solid var(--error);
+}

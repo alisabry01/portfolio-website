@@ -14,9 +14,8 @@
 }
 
 .view-more {
-  all: unset;
-  cursor: pointer;
   color: var(--muted-foreground);
+  white-space: nowrap;
   transition: color var(--transition-timing);
 }
 
@@ -39,4 +38,11 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+}
+
+@media (max-width: 767px) {
+  .featured-projects main {
+    display: flex;
+    flex-direction: column;
+  }
 }

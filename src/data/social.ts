@@ -1,6 +1,7 @@
 export const socialInfo = {
   picture: "https://avatars.githubusercontent.com/u/133518349?v=4",
-  name: "Ammar",
+  firstName: "Ammar",
+  fullName: "Ammar El-Badry",
   birthDate: "2002-02-26",
   title: "software engineer",
   country: "Dumyat, Egypt",

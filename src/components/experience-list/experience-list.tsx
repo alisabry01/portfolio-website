@@ -82,7 +82,7 @@ export const ExperienceList: React.FC<ExperienceListProps> = ({
                 <div>
                   <h3>{path.jobTitle}</h3>
                   <time>
-                    <span>{path.dates.from}</span> <span>-</span>{" "}
+                    <span>{path.dates.from}</span> -{" "}
                     <span>{path.dates.to}</span>
                   </time>
                 </div>

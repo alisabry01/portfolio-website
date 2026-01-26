@@ -20,7 +20,7 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProbs> = ({
       <header>
         <h2>Featured Projects</h2>
         <Link to="/projects" className={styles["view-more"]}>
-          view more{" "}
+          View More{" "}
           <span>
             <LuArrowRight />
           </span>

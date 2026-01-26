@@ -16,6 +16,7 @@
   --popover-foreground: #e0e0e0;
 
   --primary: #f8fafc;
+  --primary-hover: #f8fafcd7;
   --primary-foreground: #0f172a;
 
   --secondary: #1e293b;
@@ -47,6 +48,15 @@
     background-color var(--transition-timing),
     color var(--transition-timing);
   scrollbar-gutter: stable;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: #f8fafc5d;
 }
 
 ::-webkit-scrollbar {

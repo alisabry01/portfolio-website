@@ -1,5 +1,5 @@
 import styles from "./resume-btn.module.css";
-import { LuArrowUpRight } from "react-icons/lu";
+import { LuExternalLink } from "react-icons/lu";
 import { socialInfo } from "@/data";
 
 export const ResumeBtn = () => {
@@ -11,7 +11,7 @@ export const ResumeBtn = () => {
     >
       Resume{" "}
       <span>
-        <LuArrowUpRight />
+        <LuExternalLink />
       </span>
     </a>
   );

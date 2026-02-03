@@ -12,7 +12,7 @@
 }
 
 .headline h1 {
-  padding: 0.5rem 0;
+  margin: 0.5rem 0;
   font-family: Calistoga, Inter, Tahoma;
   font-size: 2.7rem;
   line-height: 2.75rem;
@@ -65,7 +65,7 @@
 
   .headline h1 {
     font-size: 2.5rem;
-    padding: 0;
+    margin: 0;
   }
 
   .headline p {
@@ -75,7 +75,7 @@
   .description {
     grid-area: 2 / 1 / 3 / 3;
     font-size: 1.1rem;
-    /* align-self: start; */
+    align-self: start;
   }
 
   .external-links {

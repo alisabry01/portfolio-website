@@ -8,12 +8,11 @@
 }
 
 .card-cover {
-  border: none;
-  object-fit: cover;
-  /* object-fit: contain;
-  aspect-ratio: 16 / 9; */
+  background-color: var(--secondary);
+  object-fit: contain;
   border-radius: var(--radius);
   height: 10rem;
+  padding: 10px;
 }
 
 .card-header h3 {

@@ -7,12 +7,11 @@ export const workList: ExperienceBlock[] = [
     id: "Egyptian Armed Forces",
     organization: {
       name: "Egyptian Armed Forces | Operations & Training Office",
-      image:
-        "https://upload.wikimedia.org/wikipedia/ar/f/fd/%D8%B4%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9-%D9%84%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B3%D9%84%D8%AD%D8%A9.jpg",
+      image: "/egyptian-armed-forces-engineering-division.webp",
     },
     careerPath: [
       {
-        jobTitle: "IT Operations Manager (Previously IT Support Intern)",
+        jobTitle: "IT Operations Manager",
         dates: {
           from: "Jan 2025",
           to: "Dec 2025",
@@ -20,9 +19,7 @@ export const workList: ExperienceBlock[] = [
         achievements: [
           "Designed and implemented a custom MS Access database to streamline the storage and retrieval of official faxes from the Engineering Division, significantly improving office response times and data accessibility.",
           "Configured and maintained a local office network, ensuring reliable connectivity and data sharing between devices.",
-          "Standardized the file systems and directory structures across office workstations to ensure 100% compliance with Brigade operational requirements.",
           "Managed daily administrative workflows, including the coordination of high-priority communications (faxes) and the preparation of technical training materials for personnel.",
-          "Promoted from an initial 6-month internship to a managerial role for the final 6 months, overseeing critical office duties and IT infrastructure.",
         ],
       },
     ],
@@ -38,8 +35,7 @@ export const workList: ExperienceBlock[] = [
     id: "Alx Africa",
     organization: {
       name: "Alx Africa",
-      image:
-        "https://www.alxafrica.com/wp-content/uploads/2023/12/logo-black.svg",
+      image: "/alx-africa.webp",
       orgUrl: "https://www.alxafrica.com/",
     },
     careerPath: [
@@ -86,8 +82,7 @@ export const educationList: ExperienceBlock[] = [
     id: "Damietta University",
     organization: {
       name: "Damietta University",
-      image:
-        "https://upload.wikimedia.org/wikipedia/ar/3/30/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%AF%D9%85%D9%8A%D8%A7%D8%B7.gif",
+      image: "/damietta-university-logo.webp",
     },
     careerPath: [
       {

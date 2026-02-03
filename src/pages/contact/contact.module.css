@@ -1,8 +1,8 @@
 .contact h1 {
-  padding: 0.5rem 0;
   font-family: Calistoga, Inter, Tahoma;
   font-size: 2.7rem;
-  line-height: 2rem;
+  line-height: 2.7rem;
+  margin-top: 0.6rem;
   margin-bottom: 1rem;
 }
 
@@ -127,4 +127,11 @@
   border-radius: var(--radius);
   background-color: rgba(127, 29, 29, 0.1);
   border: 1px solid var(--error);
+}
+
+@media (max-width: 767px) {
+  .contact h1 {
+    margin-top: 1.7rem;
+    font-size: 2.5rem;
+  }
 }

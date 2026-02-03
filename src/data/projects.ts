@@ -6,7 +6,7 @@ export const projectsInfo: ProjectInfo[] = [
     title: "Life Nest",
     description:
       "Life Nest empowers hospitals to efficiently manage their incubators and simplify the reservation process for parents.",
-    image: "https://avatars.githubusercontent.com/u/146668301",
+    image: "/incubator.webp",
     tags: [
       "JavaScript",
       "Express",
@@ -33,7 +33,7 @@ export const projectsInfo: ProjectInfo[] = [
     title: "Raqeeb",
     description:
       "A software solution designed to streamline inventory management process. It helps keep track of materials, products, and their quantities.",
-    image: "https://avatars.githubusercontent.com/u/173635414",
+    image: "/inventory-management-system.webp",
     tags: [
       "JavaScript",
       "Prisma",
@@ -56,5 +56,46 @@ export const projectsInfo: ProjectInfo[] = [
       },
     ],
     featured: true,
+  },
+  {
+    title: "Simple Shell",
+    description:
+      "A simple UNIX command line interpreter provides basic functionality for users to interact with their system through a command-line interface.",
+    image: "/unix-shell.webp",
+    tags: [
+      "C Programming Language",
+      "String Manipulation",
+      "Memory Management",
+    ],
+    links: [
+      {
+        label: "Source",
+        url: "https://github.com/ammarelbadry1/simple_shell",
+        Icon: LuGithub,
+      },
+    ],
+    featured: false,
+  },
+  {
+    title: "Holbertonbnb",
+    description:
+      "A clone of the popular vacation rental website, Airbnb, aims to replicate the core functionality of the original website.",
+    image: "/holberton-bnb.webp",
+    tags: [
+      "Python",
+      "OOP",
+      "HTML",
+      "CSS",
+      "Shell Scripting",
+      "Unit Testing",
+    ],
+    links: [
+      {
+        label: "Source",
+        url: "https://github.com/ammarelbadry1/AirBnB_clone",
+        Icon: LuGithub,
+      },
+    ],
+    featured: false,
   },
 ];

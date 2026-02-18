@@ -2,13 +2,9 @@ import styles from "./hero-section.module.css";
 import { MdWavingHand } from "react-icons/md";
 import { ResumeBtn, SocialSection } from "@/components";
 import { socialInfo } from "@/data";
+import { getAge } from "@/utils";
 
 export const HeroSection = () => {
-  const getAge = (birthDate: string): number =>
-    Math.floor(
-      (new Date().getTime() - new Date(birthDate).getTime()) / 3.15576e10,
-    );
-
   return (
     <main className={styles["hero-section"]}>
       <header className={styles["headline"]}>

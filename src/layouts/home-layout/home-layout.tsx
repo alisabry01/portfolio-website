@@ -59,7 +59,8 @@ export const HomeLayout = () => {
       </section>
       <footer className={styles["footer"]}>
         <section className={styles["copyright"]}>
-          &copy; {new Date().getFullYear()} {socialInfo.fullName}
+          &copy; {new Date().getFullYear()}{" "}
+          {`${socialInfo.firstName} ${socialInfo.lastName}`}
         </section>
         <SocialSection />
       </footer>

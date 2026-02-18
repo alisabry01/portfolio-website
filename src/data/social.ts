@@ -1,7 +1,7 @@
 export const socialInfo = {
-  picture: "/portfolio-picture.webp",
+  picture: "/portfolio-picture.webpe",
   firstName: "Ammar",
-  fullName: "Ammar El-Badry",
+  lastName: "El-Badry",
   birthDate: "2002-02-26",
   title: "software engineer",
   country: "Dumyat, Egypt",
